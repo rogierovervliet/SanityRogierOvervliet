@@ -1,0 +1,39 @@
+{
+  "root": true,
+  "api": {
+    "projectId": "lw6wxlgx",
+    "dataset": "production"
+  },
+  "project": {
+    "name": "rogierSanity"
+  },
+  "plugins": [
+    "@sanity/dashboard",
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "dashboard-widget-netlify",
+    "dashboard-widget-gatsby"
+  ],
+  "env": {
+    "development": {
+      "plugins": ["@sanity/vision"]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schema.js"
+    },
+    {
+      "implements": "part:@sanity/dashboard/config",
+      "path": "./dashboardConfig.js"
+    },
+    {
+      "name": "part:@sanity/desk-tool/structure",
+      "path": "./deskStructure.js"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "sanity",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "package.json",
+  "author": "Roland Branten <roland.branten@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "graphql-deploy": "sanity graphql deploy --no-playground",
+    "sanity-deploy": "sanity deploy",
+    "start": " npm run graphql-deploy && sanity start",
+    "deploy": "npm run graphql-deploy && npm run sanity-deploy"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/base": "^1.149.5",
+    "@sanity/components": "^1.149.6",
+    "@sanity/core": "^1.149.6",
+    "@sanity/dashboard": "^1.149.5",
+    "@sanity/default-layout": "^1.149.5",
+    "@sanity/default-login": "^1.149.0",
+    "@sanity/desk-tool": "^1.149.5",
+    "@sanity/vision": "^1.149.0",
+    "prop-types": "^15.7",
+    "react": "^16.13",
+    "react-dom": "^16.13",
+    "sanity-plugin-dashboard-widget-gatsby": "^1.0.9",
+    "sanity-plugin-dashboard-widget-netlify": "^1.0.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/r-oland/sanity-CV.git"
+  }
+}
