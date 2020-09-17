@@ -1,6 +1,6 @@
 const supportedLanguages = [
-  { id: "en", title: "English", isDefault: true },
-  { id: "nl", title: "Dutch" }
+  { id: "nl", title: "Dutch", isDefault: true },
+  { id: "en", title: "English" },
 ];
 
 export default {
@@ -11,14 +11,14 @@ export default {
     {
       title: "Translations",
       name: "translations",
-      options: { collapsible: true, collapsed: false }
-    }
+      options: { collapsible: true, collapsed: true },
+    },
   ],
-  fields: supportedLanguages.map(lang => ({
+  fields: supportedLanguages.map((lang) => ({
     title: lang.title,
     name: lang.id,
     fieldset: lang.isDefault ? null : "translations",
     type: "array",
-    of: [{ type: "block" }]
-  }))
+    of: [{ type: "block" }],
+  })),
 };

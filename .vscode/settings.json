@@ -1,18 +1,18 @@
 {
   "files.exclude": {
-    "node_modules": true,
-    "netlify.js": true,
-    ".gitignore": true,
-    "desktop.ini": true,
-    "package-lock.json": true,
-    "yarn.lock": true,
-    "tsconfig.json": true,
-    "static": true,
-    "dist": true,
-    "plugins": true,
-    "package.json": true,
-    "config": true,
-    "sanity.json": true
+    // "node_modules": true,
+    // "netlify.js": true,
+    // ".gitignore": true,
+    // "desktop.ini": true,
+    // "package-lock.json": true,
+    // "yarn.lock": true,
+    // "tsconfig.json": true,
+    // "static": true,
+    // "dist": true,
+    // "plugins": true,
+    // "package.json": true,
+    // "config": true,
+    // "sanity.json": true
   },
 
   "files.associations": {
